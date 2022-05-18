@@ -11,4 +11,5 @@ Paper: UNSUPERVISED DEEP HYPERSPECTRAL INPAINTING USING A NEW MIXING MODEL (IGAR
 ![image](https://user-images.githubusercontent.com/61419984/169041386-8eee408a-fc82-4137-b07b-d84d971dce64.png)
 
 Color image of the abundances; blue: water, red: tree, green: soil. From left to right: inpainted, downgraded, and ground truth abundances.
+
 ![image](https://user-images.githubusercontent.com/61419984/169041449-22c1652f-3cf1-46a5-97a9-27998a08a509.png)
