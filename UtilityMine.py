@@ -46,7 +46,7 @@ def get_noise(input_depth, method, spatial_size, noise_type='u', var=1./10):
         assert input_depth == 2
         X, Y = np.meshgrid(np.arange(0, spatial_size[1])/float(spatial_size[1]-1), np.arange(0, spatial_size[0])/float(spatial_size[0]-1))
         meshgrid = np.concatenate([X[None,:], Y[None,:]])
-        net_input=  torch.from_numpy(meshgrid)
+        net_input=  np_to_torch(meshgrid)
     else:
         assert False
         
