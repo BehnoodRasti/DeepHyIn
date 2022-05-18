@@ -11,15 +11,14 @@ import matplotlib.pyplot as plt
 #matplotlib inline
 
 import os
-from common import Concat
-from common import bn
-from common import act
+from common import *
+
 #from skimage.metrics import peak_signal_noise_ratio
 #from skimage.measure import compare_psnr
 #from skimage.measure import compare_mse
 import numpy as np
 import scipy.io
-import UnmixArch
+from UnmixArch import UnmixArch
 import torch
 import torch.optim
 import torch.nn as nn
@@ -71,6 +70,7 @@ EE=np.zeros((p1,rmax*n_lin))
 # ax2.imshow(mask_np.squeeze(), cmap='gray') 
 # ax3.imshow((img_var*mask_var).detach().cpu().numpy()[band,:,:], cmap='gray')
 # plt.show()
+
 #%%
 pad = 'reflection' #'zero'
 OPT_OVER = 'net'
