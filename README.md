@@ -1,7 +1,7 @@
 # DeepHyIn
 UNSUPERVISED DEEP HYPERSPECTRAL INPAINTING
 
-We propose a novel model for hyperspectral inpainting in which the degraded hyperspectral image is a linear mixture of endmembers and degraded abundances. The proposed model is subjected to abundance sum to one and nonnegativity constraints. We further assume that the endmembers are known. Then, we propose an optimization problem to estimate the unknown abundance using a deep image prior. We shift the optimization problem to optimize the parameters of a deep network.
+We propose a novel model for hyperspectral inpainting in which the degraded hyperspectral image is a linear mixture of endmembers and degraded abundances. The proposed model is subjected to abundance sum to one and nonnegativity constraints. We further assume that the endmembers are known. Then, we propose an optimization problem to estimate the unknown abundance using a deep image prior. Inspired by deep image prior, we shift the optimization problem to optimize the parameters of a deep network.
 
 
 Paper: UNSUPERVISED DEEP HYPERSPECTRAL INPAINTING USING A NEW MIXING MODEL (IGARSS 2022)
