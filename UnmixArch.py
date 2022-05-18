@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-#from .common import *
+from common import *
 
 # class Lin(nn.Linear):
 #     def __init__(self, in_features, out_features, bias=True):
