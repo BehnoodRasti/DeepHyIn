@@ -263,3 +263,16 @@ def remove_norm_torch(x):
     #      x[:,i] = x[:,i]/torch.norm(x, p=2, dim=0)       
     # return x
     return torch.div(x, torch.norm(x, p=2, dim=0))
+def np_to_torch(img_np):
+    '''Converts image in numpy.array to torch.Tensor.
+
+    From C x W x H [0..1] to  C x W x H [0..1]
+    '''
+    return torch.from_numpy(img_np)[None, :]
+
+def torch_to_np(img_var):
+    '''Converts an image in torch.Tensor format to np.array.
+
+    From 1 x C x W x H [0..1] to  C x W x H [0..1]
+    '''
+    return img_var.detach().cpu().numpy()[0]
